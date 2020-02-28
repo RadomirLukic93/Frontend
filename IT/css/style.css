@@ -1,0 +1,21 @@
+/* CSS Document */
+
+a[href*="www.google"] { 
+	color: green; 
+}
+a[href*="www.link-group"] { 
+	color: red; 
+}
+#second-div p:nth-child(odd){
+	color: blue;
+}
+#second-div p:nth-child(even) {
+	color: red;
+}
+#first-div > p::after {
+	content: " NEW";
+	color: yellow;
+}
+body > p:last-child:hover {
+	font-style: italic;
+}
