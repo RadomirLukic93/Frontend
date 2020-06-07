@@ -1,0 +1,101 @@
+/* CSS Document */
+
+
+body {
+	
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #050210;
+}
+
+.circle {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+	animation: okretanje 0.5s linear infinite;
+}
+@keyframes okretanje {
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+		
+	
+}
+
+.circle span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+	
+}
+
+.circle span:nth-child(1) {
+	filter: blur(5px);
+		
+}
+.circle span:nth-child(2) {
+	filter: blur(10px);
+		
+}
+.circle span:nth-child(3) {
+	filter: blur(20px);
+		
+}
+.circle span:nth-child(4) {
+	filter: blur(30px);
+		
+}
+.circle:before {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	background:  #050210;
+	z-index: 2;
+	
+}
+.circle:after {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	background:  #0B0423;
+	animation: povecanje 1s linear infinite;
+	z-index: 3;
+	
+
+}
+@keyframes povecanje {
+	0% 
+	{
+		transform: scale(0,0);
+	}
+	100% 
+	{
+		transform: scale(100%,100%);
+	}
+}
+
+
+
+
+
