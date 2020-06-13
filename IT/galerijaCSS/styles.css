@@ -1,0 +1,83 @@
+/* CSS Document */
+/* line 4, styles.scss */
+body {
+  font-size: calc(15px + (21 - 15) * ((100vw - 480px) / (1600 - 480)));
+  font-family: 'Roboto', sans-serif; }
+  @media (max-width: 479px) {
+    /* line 4, styles.scss */
+    body {
+      font-size: 15px; } }
+  @media (min-width: 1600px) {
+    /* line 4, styles.scss */
+    body {
+      font-size: 24px; } }
+
+/* line 15, styles.scss */
+main {
+  padding: 10px; }
+
+/* line 19, styles.scss */
+h1 {
+  margin-left: 4vw; }
+  @media (max-width: 479px) {
+    /* line 19, styles.scss */
+    h1 {
+      text-align: center;
+      margin-left: 0; } }
+
+/* line 27, styles.scss */
+#galerija {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  @media (min-width: 480px) and (max-width: 991px) {
+    /* line 27, styles.scss */
+    #galerija {
+      align-items: baseline; }
+      /* line 42, styles.scss */
+      #galerija .box1:last-child {
+        margin-right: auto; } }
+
+/* line 50, styles.scss */
+.textgal {
+  padding: 10px; }
+  /* line 53, styles.scss */
+  .textgal p {
+    margin: 0px; }
+
+/* line 58, styles.scss */
+img {
+  width: 16vw;
+  background-color: transparent; }
+  @media (max-width: 479px) {
+    /* line 58, styles.scss */
+    img {
+      width: 80vw; } }
+  @media (min-width: 480px) and (max-width: 991px) {
+    /* line 58, styles.scss */
+    img {
+      width: 25vw; } }
+
+/* line 71, styles.scss */
+.slika {
+  background-color: #0CAFF4;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 100%;
+  text-align: center; }
+
+/* line 79, styles.scss */
+.box1 {
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px black; }
+
+/* line 89, styles.scss */
+p {
+  margin: 10px 20px; }
+
+/*# sourceMappingURL=styles.css.map */
